@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Премиальная архитектурная подсветка зданий, фасадов и ландшафта. Проектирование, поставка и монтаж световых решений.">
+  <meta name="theme-color" content="#070908">
+  <title>LIGHTFORM — Архитектурный свет</title>
+
+  <!-- Premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader" aria-label="Загрузка сайта">
+      <div class="preloader__meta">
+        <span>LIGHTFORM</span>
+        <span id="preloaderPercent">00</span>
+      </div>
+      <div class="preloader__line">
+        <span id="preloaderBar"></span>
+      </div>
+      <p>LIGHT / ARCHITECTURE / EMOTION</p>
+    </div>
+
+    <!-- Ambient UI -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="brand" href="#top" aria-label="Lightform — на главную">
+        <span class="brand__mark">L</span>
+        <span class="brand__text">
+          <strong>LIGHTFORM</strong>
+          <small>ARCHITECTURAL LIGHT</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#services">Решения</a>
+        <a href="#process">Как работаем</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <a class="header__cta magnetic" href="#contact">
+        <span>Обсудить проект</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero section-dark" aria-labelledby="hero-title">
+        <div class="hero__visual" data-parallax data-speed="0.08">
+          <img
+            class="hero__image hero__image--dark"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=88"
+            alt="Современный загородный дом ночью"
+            fetchpriority="high"
+          >
+          <div class="hero__image hero__image--light" aria-hidden="true">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=88"
+              alt=""
+            >
+          </div>
+          <div class="hero__veil"></div>
+          <div class="hero__vignette"></div>
+          <span class="hero__light-orb hero__light-orb--one"></span>
+          <span class="hero__light-orb hero__light-orb--two"></span>
+        </div>
+
+        <div class="hero__grid">
+          <div class="hero__eyebrow reveal-line">
+            <span>01</span>
+            <span>ARCHITECTURE / LIGHT / EXPERIENCE</span>
+          </div>
+
+          <div class="hero__copy">
+            <p class="hero__kicker reveal-line">Свет, который проектирует настроение</p>
+            <h1 id="hero-title" class="hero__title split-reveal">
+              <span>ПОДСВЕТКА,</span>
+              <span>КОТОРАЯ <em>МЕНЯЕТ</em></span>
+              <span>АРХИТЕКТУРУ</span>
+            </h1>
+            <p class="hero__lead reveal-line">
+              Проектируем выразительный свет для фасадов, частных домов,
+              общественных пространств и ландшафта — от концепции до запуска.
+            </p>
+
+            <div class="hero__actions reveal-line">
+              <a class="button button--primary magnetic" href="#contact">
+                <span>Рассчитать проект</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="button button--ghost" href="#projects">
+                <span class="button__play">▶</span>
+                Смотреть проекты
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__side">
+            <div class="hero__side-card glass-card reveal-panel">
+              <span class="hero__side-label">LOCAL TIME</span>
+              <strong id="liveTime">--:--</strong>
+              <small>Минск / GMT+3</small>
+            </div>
+            <div class="hero__scroll-hint">
+              <span>SCROLL TO TURN THE LIGHT ON</span>
+              <i></i>
+            </div>
+          </div>
+
+          <div class="hero__bottom">
+            <span>МИНСК · БЕЛАРУСЬ</span>
+            <span>© 2026 LIGHTFORM</span>
+            <span>SCROLL 01 →</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRO -->
+      <section class="intro section-dark">
+        <div class="container intro__grid">
+          <div class="section-index">01 / PHILOSOPHY</div>
+          <div>
+            <p class="eyebrow">Не просто свет. Сценография пространства.</p>
+            <h2 class="heading heading--xl text-reveal">
+              Мы не добавляем свет к архитектуре.<br>
+              <span>Мы раскрываем то, что уже в ней есть.</span>
+            </h2>
+            <div class="intro__split">
+              <p class="muted copy">
+                Сильная ночная архитектура строится на контрасте: тень,
+                глубина, материал и точный акцент. Поэтому каждый проект
+                начинается не с каталога светильников, а с идеи.
+              </p>
+              <div class="stats">
+                <div class="stat">
+                  <strong>7+</strong>
+                  <span>лет в светодизайне</span>
+                </div>
+                <div class="stat">
+                  <strong>200+</strong>
+                  <span>реализованных объектов</span>
+                </div>
+                <div class="stat">
+                  <strong>360°</strong>
+                  <span>от концепции до монтажа</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects section-dark" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="section-index">02 / SELECTED WORKS</div>
+              <p class="eyebrow">Свет в реальных пространствах</p>
+            </div>
+            <a href="#contact" class="text-link">Обсудить похожий проект ↗</a>
+          </div>
+
+          <div class="project-stack">
+            <article class="project-card project-card--featured reveal-panel" data-parallax-card>
+              <div class="project-card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=88"
+                  alt="Современная архитектура с атмосферным освещением"
+                  loading="lazy"
+                  data-depth="0.04"
+                >
+                <div class="project-card__glow"></div>
+              </div>
+              <div class="project-card__overlay"></div>
+              <div class="project-card__meta">
+                <span>01 / PRIVATE RESIDENCE</span>
+                <span>МИНСК / 2026</span>
+              </div>
+              <div class="project-card__footer">
+                <div>
+                  <h3>Дом, который раскрывается ночью</h3>
+                  <p>Фасад + ландшафт + архитектурные акценты</p>
+                </div>
+                <span class="circle-arrow">↗</span>
+              </div>
+            </article>
+
+            <div class="project-row">
+              <article class="project-card reveal-panel" data-parallax-card>
+                <div class="project-card__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=88"
+                    alt="Архитектурный объект в ночном освещении"
+                    loading="lazy"
+                    data-depth="0.055"
+                  >
+                </div>
+                <div class="project-card__overlay"></div>
+                <div class="project-card__meta">
+                  <span>02 / COMMERCIAL</span>
+                  <span>МИНСК / 2025</span>
+                </div>
+                <div class="project-card__footer">
+                  <div>
+                    <h3>Городская пластика</h3>
+                    <p>Фасадное освещение</p>
+                  </div>
+                  <span class="circle-arrow">↗</span>
+                </div>
+              </article>
+
+              <article class="project-card reveal-panel" data-parallax-card>
+                <div class="project-card__media">
+                  <img
+                    src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1800&q=88"
+                    alt="Современный жилой дом вечером"
+                    loading="lazy"
+                    data-depth="0.04"
+                  >
+                </div>
+                <div class="project-card__overlay"></div>
+                <div class="project-card__meta">
+                  <span>03 / LANDSCAPE</span>
+                  <span>БЕЛАРУСЬ / 2025</span>
+                </div>
+                <div class="project-card__footer">
+                  <div>
+                    <h3>Сад после заката</h3>
+                    <p>Дорожки, деревья, террасы</p>
+                  </div>
+                  <span class="circle-arrow">↗</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services section-dark" id="services">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="section-index">03 / CAPABILITIES</div>
+              <p class="eyebrow">Световые решения под задачу</p>
+            </div>
+            <p class="section-head__copy muted">
+              Разрабатываем систему света так, чтобы она выглядела дорого
+              вечером и незаметно работала днём.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card glass-card reveal-panel">
+              <span class="service-card__num">01</span>
+              <h3>Архитектурный<br><em>свет</em></h3>
+              <p>Фасады, вертикали, текстуры материалов и архитектурные акценты.</p>
+              <span class="service-card__arrow">↗</span>
+            </article>
+
+            <article class="service-card glass-card reveal-panel">
+              <span class="service-card__num">02</span>
+              <h3>Ландшафтное<br><em>освещение</em></h3>
+              <p>Сценарии для сада, дорожек, деревьев, террас и зоны отдыха.</p>
+              <span class="service-card__arrow">↗</span>
+            </article>
+
+            <article class="service-card glass-card reveal-panel">
+              <span class="service-card__num">03</span>
+              <h3>Световой<br><em>дизайн</em></h3>
+              <p>Концепция, визуализация, подбор оборудования и световые расчёты.</p>
+              <span class="service-card__arrow">↗</span>
+            </article>
+
+            <article class="service-card glass-card reveal-panel">
+              <span class="service-card__num">04</span>
+              <h3>Монтаж и<br><em>настройка</em></h3>
+              <p>Установка, программирование сценариев и запуск системы на объекте.</p>
+              <span class="service-card__arrow">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="process section-dark" id="process">
+        <div class="container">
+          <div class="process__hero">
+            <div class="section-index">04 / PROCESS</div>
+            <h2 class="heading heading--xl text-reveal">
+              От первой линии<br>до <span>первого включения.</span>
+            </h2>
+          </div>
+
+          <div class="process__timeline">
+            <div class="process-step reveal-panel">
+              <span>01</span>
+              <div>
+                <h3>Брифинг и выезд</h3>
+                <p>Понимаем архитектуру, сценарии использования и ограничения объекта.</p>
+              </div>
+            </div>
+            <div class="process-step reveal-panel">
+              <span>02</span>
+              <div>
+                <h3>Концепция света</h3>
+                <p>Собираем световую драматургию и показываем идею до закупки оборудования.</p>
+              </div>
+            </div>
+            <div class="process-step reveal-panel">
+              <span>03</span>
+              <div>
+                <h3>Проектирование</h3>
+                <p>Чертежи, спецификация, расчёты и точная привязка каждого источника света.</p>
+              </div>
+            </div>
+            <div class="process-step reveal-panel">
+              <span>04</span>
+              <div>
+                <h3>Монтаж и запуск</h3>
+                <p>Собираем систему на объекте и настраиваем свет до нужного кадра.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT CTA -->
+      <section class="contact section-dark" id="contact">
+        <div class="contact__backdrop">
+          <img
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=82"
+            alt=""
+            loading="lazy"
+            data-parallax-image
+          >
+        </div>
+        <div class="container contact__inner">
+          <div class="section-index">05 / START A PROJECT</div>
+          <p class="eyebrow">Давайте включим ваш объект</p>
+          <h2 class="heading heading--mega text-reveal">
+            Есть архитектура?<br><span>Добавим ей характер.</span>
+          </h2>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться?" required>
+            </label>
+            <label>
+              <span>Телефон / Telegram</span>
+              <input type="text" name="contact" autocomplete="tel" placeholder="+375..." required>
+            </label>
+            <label>
+              <span>Что подсвечиваем?</span>
+              <textarea name="message" rows="3" placeholder="Дом, фасад, участок, коммерческий объект..." required></textarea>
+            </label>
+            <button type="submit" class="button button--primary magnetic">
+              <span>Получить концепцию</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-dark">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand" href="#top">
+            <span class="brand__mark">L</span>
+            <span class="brand__text">
+              <strong>LIGHTFORM</strong>
+              <small>ARCHITECTURAL LIGHT</small>
+            </span>
+          </a>
+          <p class="footer__note">Архитектурный свет, который работает на впечатление.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#projects">Проекты</a>
+          <a href="#services">Решения</a>
+          <a href="#process">Процесс</a>
+          <a href="#contact">Связаться</a>
+        </div>
+        <div class="footer__contact">
+          <span>МИНСК / BELARUS</span>
+          <a href="tel:+375296661122">+375 29 666 11 22</a>
+          <a href="mailto:hello@lightform.by">hello@lightform.by</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis smooth scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
